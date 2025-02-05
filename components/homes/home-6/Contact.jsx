@@ -1,8 +1,48 @@
 "use client";
+import { useState } from "react";
 import { contactItems } from "@/data/contact";
-import React from "react";
 import Image from "next/image";
+
 export default function Contact() {
+  // State for form fields
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  // Handle form field changes
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      // Example fetch to an API endpoint '/api/contact' (create or adjust as needed)
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send form data");
+      }
+
+      // Clear form after successful submission, or display success message, etc.
+      setFormData({ name: "", email: "", phone: "", message: "" });
+      alert("Your message has been sent successfully!");
+    } catch (error) {
+      console.error(error);
+      alert("Oops! Something went wrong. Please try again later.");
+    }
+  };
+
   return (
     <div className="container position-relative">
       <div className="row">
@@ -15,56 +55,53 @@ export default function Contact() {
           {/* Contact Information */}
           <div className="row">
             <div className="col-md-11">
-              {/* Address */}
-
               {contactItems.map((item, index) => (
-                <React.Fragment key={index}>
-                  <div
-                    className={`contact-item ${
-                      index !== 3 ? "mb-40 mb-sm-20" : ""
-                    }`}
-                  >
-                    <div className="ci-icon">
-                      <i className={item.iconClass} />
-                    </div>
-                    <h4 className="ci-title  visually-hidden">{item.title}</h4>
-                    <div className="ci-text">{item.text}</div>
-                    <div>
-                      <a
-                        href={item.link.url}
-                        target={item.link.target}
-                        rel={item.link.rel}
-                        className="link-hover-anim"
-                        data-link-animate="y"
-                      >
-                        <span className="link-strong link-strong-unhovered">
-                          {item.link.text}{" "}
-                          <i
-                            className="mi-arrow-right size-18"
-                            aria-hidden="true"
-                          ></i>
-                        </span>
-                        <span
-                          className="link-strong link-strong-hovered"
-                          aria-hidden="true"
-                        >
-                          {item.link.text}{" "}
-                          <i
-                            className="mi-arrow-right size-18"
-                            aria-hidden="true"
-                          ></i>
-                        </span>
-                      </a>
-                    </div>
+                <div
+                  className={`contact-item ${
+                    index !== 3 ? "mb-40 mb-sm-20" : ""
+                  }`}
+                  key={index}
+                >
+                  <div className="ci-icon">
+                    <i className={item.iconClass} />
                   </div>
-                </React.Fragment>
+                  <h4 className="ci-title visually-hidden">{item.title}</h4>
+                  <div className="ci-text">{item.text}</div>
+                  <div>
+                    <a
+                      href={item.link.url}
+                      target={item.link.target}
+                      rel={item.link.rel}
+                      className="link-hover-anim"
+                      data-link-animate="y"
+                    >
+                      <span className="link-strong link-strong-unhovered">
+                        {item.link.text}{" "}
+                        <i
+                          className="mi-arrow-right size-18"
+                          aria-hidden="true"
+                        ></i>
+                      </span>
+                      <span
+                        className="link-strong link-strong-hovered"
+                        aria-hidden="true"
+                      >
+                        {item.link.text}{" "}
+                        <i
+                          className="mi-arrow-right size-18"
+                          aria-hidden="true"
+                        ></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
               ))}
-              {/* End Phone */}
             </div>
           </div>
           {/* End Contact Information */}
         </div>
         {/* End Left Column */}
+
         {/* Right Column */}
         <div className="col-lg-8 col-xl-7 offset-xl-1">
           <div className="position-relative">
@@ -80,17 +117,19 @@ export default function Contact() {
               </div>
             </div>
             {/* End Decorative Image */}
+
             <div className="box-shadow round p-4 p-sm-5">
               <h4 className="h3 mb-30">Get in Touch</h4>
+
               {/* Contact Form */}
               <form
-                onSubmit={(e) => e.preventDefault()}
+                onSubmit={handleSubmit}
                 className="form contact-form"
                 id="contact_form"
               >
                 <div className="row">
+                  {/* Name */}
                   <div className="col-md-6">
-                    {/* Name */}
                     <div className="form-group">
                       <label htmlFor="name">Name</label>
                       <input
@@ -102,12 +141,13 @@ export default function Contact() {
                         pattern=".{3,100}"
                         required
                         aria-required="true"
+                        value={formData.name}
+                        onChange={handleChange}
                       />
                     </div>
-                    {/* End Name */}
                   </div>
+                  {/* Email */}
                   <div className="col-md-6">
-                    {/* Email */}
                     <div className="form-group">
                       <label htmlFor="email">Email</label>
                       <input
@@ -119,11 +159,30 @@ export default function Contact() {
                         pattern=".{5,100}"
                         required
                         aria-required="true"
+                        value={formData.email}
+                        onChange={handleChange}
                       />
                     </div>
-                    {/* End Email */}
                   </div>
                 </div>
+
+                {/* Phone */}
+                <div className="form-group">
+                  <label htmlFor="phone">Phone</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    className="input-lg round form-control"
+                    placeholder="Enter your phone number"
+                    pattern=".{7,15}"
+                    required
+                    aria-required="true"
+                    value={formData.phone}
+                    onChange={handleChange}
+                  />
+                </div>
+
                 {/* Message */}
                 <div className="form-group">
                   <label htmlFor="message">Message</label>
@@ -133,9 +192,11 @@ export default function Contact() {
                     className="input-lg round form-control"
                     style={{ height: 130 }}
                     placeholder="Enter your message"
-                    defaultValue={""}
+                    value={formData.message}
+                    onChange={handleChange}
                   />
                 </div>
+
                 <div className="row">
                   <div className="col-md-6 col-xl-5">
                     {/* Send Button */}
@@ -144,11 +205,11 @@ export default function Contact() {
                         className="submit_btn btn btn-mod btn-color btn-large btn-round btn-hover-anim"
                         id="submit_btn"
                         aria-controls="result"
+                        type="submit"
                       >
                         <span>Send Message</span>
                       </button>
                     </div>
-                    {/* End Send Button */}
                   </div>
                   <div className="col-md-6 col-xl-7 d-flex align-items-center">
                     {/* Inform Tip */}
@@ -158,7 +219,6 @@ export default function Contact() {
                       to the <a href="#">Terms &amp; Conditions</a> and{" "}
                       <a href="#">Privacy Policy</a>.
                     </div>
-                    {/* End Inform Tip */}
                   </div>
                 </div>
                 <div

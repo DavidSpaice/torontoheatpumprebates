@@ -102,9 +102,9 @@ export const gradientOnePage = [
 
 export const fancyMultipage = [
   { href: "/", text: "Home", class: "active" },
-  { href: "/heat-pumps", text: "Heat Pump" },
+  { href: "/heat-pumps", text: "Heat Pumps" },
   { href: "/about", text: "About" },
-  { href: "/heat-pump-rebates", text: "Rebates" },
+  { href: "/rebates", text: "Rebates" },
   { href: "/how-to-apply-rebates", text: "How To Apply" },
   { href: "/blog", text: "Blog" },
   { href: "/contact", text: "Contact" },

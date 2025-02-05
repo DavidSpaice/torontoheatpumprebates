@@ -54,6 +54,37 @@ export const faqDataMain = [
       "To apply for a heat pump rebate, you will need to submit your purchase invoice, a detailed installation report from a licensed installer, and proof of the age and type of your current heating system. You may also need photos and serial numbers of the installed unit. Visit our rebate application page for a comprehensive checklist of required documents.",
   },
 ];
+
+export const faqDataHeatPumps = [
+  {
+    id: 1,
+    question: "Which types of heat pumps in Toronto can receive subsidies?",
+    answer:
+      "Only heat pump models that meet specific energy efficiency standards are eligible for subsidies in Toronto. This includes air sources, ground sources, and hybrid heat pumps. Please check our website for a detailed list of eligible models, or contact our support team to confirm your eligibility. ",
+  },
+  {
+    id: 2,
+    question:
+      "Can tenants apply for heat pump subsidies, or can only homeowners do so? ",
+    answer:
+      "The Toronto heat pump subsidy program is open to both homeowners and tenants, but it requires the consent of the property owner to install it. Tenants must obtain written consent from the landlord and meet all other eligibility requirements to receive subsidies. ",
+  },
+  {
+    id: 3,
+    question:
+      "Do I need to use a certified installer to receive heat pump subsidies? ",
+    answer:
+      "Yes, to receive heat pump subsidies, installation must be completed by certified HVAC technicians. Using certified installers ensures that your system is correctly installed and operates at optimal efficiency to meet subsidy eligibility criteria. Our website provides a list of certified installers in your region. ",
+  },
+  {
+    id: 4,
+    question:
+      "What documents do I need to apply for heat pump subsidies in Toronto? ",
+    answer:
+      "When applying for heat pump subsidies, you need to submit a purchase invoice, a detailed installation report provided by a licensed installer, and proof of the current heating system's age and type. You may also need to provide photos and serial numbers of the installed units. Please visit our subsidy application page for a detailed list of required documents. ",
+  },
+];
+
 export const faqs3 = [
   {
     question: "Our Story",

@@ -96,11 +96,34 @@ export const features2 = [
   },
 ];
 
+export const featuresTitle3 = [
+  {
+    title: "Identifying When Your Heat Pump Needs Maintenance",
+  },
+  {
+    subtitle: "Essential Signs Your Heat Pump Needs Professional Care",
+  },
+];
+
 export const features3 = [
-  { text: "We're professional" },
-  { text: "We're creative" },
-  { text: "We're honest" },
-  { text: "We're friendly" },
+  {
+    text: "Are you having trouble heating or cooling your space evenly? It's time to have your heat pump inspected.",
+  },
+  {
+    text: "Unusual or loud noises coming from your unit may indicate a mechanical problem that requires professional attention.",
+  },
+  {
+    text: "Excessive ice or frost on your heat pump is a clear sign that there is a malfunction that is affecting its efficiency.",
+  },
+  {
+    text: "A noticeable increase in your energy costs may indicate that your heat pump is losing efficiency.",
+  },
+  {
+    text: "Reduced airflow can be a sign of a clogged or failing component within your system.",
+  },
+  {
+    text: "If you are having trouble maintaining your set temperature, your thermostat or heat pump control unit may need to be adjusted or replaced.",
+  },
 ];
 
 export const features4 = [
@@ -146,6 +169,61 @@ export const features5 = [
       "Vivamus varius, nisi vel dictum tempor, libero nisl iaculis est, ut rutrum elit ante ac velit.",
     svgPath:
       "M4.57 18.55l2.43.335-1.769 1.7.432 2.415-2.163-1.157-2.163 1.157.432-2.415-1.769-1.7 2.43-.335 1.07-2.207 1.07 2.207zm8.5 0l2.43.335-1.769 1.7.432 2.415-2.163-1.157-2.163 1.157.432-2.415-1.769-1.7 2.43-.335 1.07-2.207 1.07 2.207zm8.5 0l2.43.335-1.769 1.7.432 2.415-2.163-1.157-2.163 1.157.432-2.415-1.769-1.7 2.43-.335 1.07-2.207 1.07 2.207zm-18.473.918l-.917.126.667.641-.163.91.816-.436.816.436-.163-.91.667-.641-.917-.126-.403-.832-.403.832zm8.5 0l-.917.126.667.641-.163.91.816-.436.816.436-.163-.91.667-.641-.917-.126-.403-.832-.403.832zm8.5 0l-.917.126.667.641-.163.91.816-.436.816.436-.163-.91.667-.641-.917-.126-.403-.832-.403.832zm-14.497-5.293l-4-8h5.381c-.3-1.42-1.573-2.5-3.066-2.5-1.838 0-3.315 1.662-3.315 3.5s1.477 3.5 3.315 3.5h2.684l.002.01c.283-.397.618-.747.995-1.041zm.915-8h-1.464c.691-.592 1.579-1 2.564-1 1.719 0 3.125 1.266 3.125 3.5s-1.406 3.5-3.125 3.5c-1.718 0-3.125-1.266-3.125-3.5 0-.39.065-.764.179-1.115-.293.381-.49.841-.553 1.354h3.662c.32-.662.866-1.211 1.559-1.538zm9.932 8.5h-1.25c-.427-.59-.994-1.082-1.661-1.431-.153-.446-.411-.838-.742-1.141h2.203c.3-1.42 1.573-2.5 3.066-2.5 1.838 0 3.315 1.662 3.315 3.5s-1.477 3.5-3.315 3.5h-2.684zm-10.848 0h-1.715c-.09-.465-.365-.869-.752-1.155.337-.312.596-.709.762-1.162h3.183c-.158.418-.278.87-.348 1.349zm8.348 8h-1.715c-.09-.465-.365-.869-.752-1.155.337-.312.596-.709.762-1.162h3.183c-.158.418-.278.87-.348 1.349zm-6.5 0h-1.25c-.427-.59-.994-1.082-1.661-1.431-.153-.446-.411-.838-.742-1.141h2.203c.3-1.42 1.573-2.5 3.066-2.5 1.838 0 3.315 1.662 3.315 3.5s-1.477 3.5-3.315 3.5h-2.684z",
+  },
+];
+
+export const featuresTitle6 = [
+  {
+    title: "Why heat pumps should be maintained regularly",
+  },
+  {
+    subtitle: "Maximize heat pump efficiency and durability",
+  },
+];
+
+export const features6 = [
+  {
+    text: "Regular services improve the performance of heat pumps, reducing energy consumption and public service costs.",
+  },
+  {
+    text: "Regular maintenance prevents unexpected failures and ensures consistent heating and cooling in bad weather.",
+  },
+  {
+    text: "Maximize return on investment by extending the operating life of the heat pump through regular maintenance.",
+  },
+  {
+    text: "Maintenance involves cleaning system components and removing contaminants, which improves indoor air quality.",
+  },
+  {
+    text: "We carefully inspect and clean ducts to promote better airflow and efficiency throughout the space.",
+  },
+  {
+    text: "Regular maintenance increases the energy efficiency of heat pumps, reducing their carbon emissions.",
+  },
+];
+
+export const featuresTitle7 = [
+  {
+    title: "Our Services",
+  },
+  {
+    subtitle:
+      "Heat Pump Rebates Toronto specializes in guiding clients through the entire process of upgrading to energy-efficient heat pump systems.",
+  },
+];
+
+export const features7 = [
+  {
+    text: "Rebate Consultation: Expert advice on available rebates and how to maximize your savings.",
+  },
+  {
+    text: "Quality Installation: Top-rated customer satisfaction in Toronto with professional heat pump installations.",
+  },
+  {
+    text: "Maximized Savings: Enhance your rebate potential with our expert guidance throughout the process.",
+  },
+  {
+    text: "Efficient Operation: Ensure your heat pump operates at peak efficiency with our comprehensive service checks and maintenance.",
   },
 ];
 

@@ -232,3 +232,26 @@ export const services6 = [
     text: "A brand is a name, term, design, lorem ipsum symbol or any other feature that identifies one seller's good or service as distinct from those of other sellers.",
   },
 ];
+
+export const services7 = [
+  {
+    src: "/assets/images/demo-fancy/services/service-1.png",
+    title: "Efficiency Enhancement",
+    text: "Regular maintenance ensures your heat pump operates at peak efficiency, significantly reducing your energy bills and environmental impact.",
+  },
+  {
+    src: "/assets/images/demo-fancy/services/service-2.png",
+    title: "Reliability Assurance",
+    text: "Proactive servicing minimizes the risk of unexpected breakdowns, keeping your heating and cooling reliable no matter the weather conditions.",
+  },
+  {
+    src: "/assets/images/demo-fancy/services/service-3.png",
+    title: "Lifespan Extension",
+    text: "Routine checks and care extend the operational lifespan of your heat pump, providing greater value and a higher return on your investment.",
+  },
+  {
+    src: "/assets/images/demo-fancy/services/service-4.png",
+    title: "Air Quality Improvement",
+    text: "Our maintenance services include cleaning key components and air ducts to remove dust and allergens, thereby improving the air quality inside your home.",
+  },
+];

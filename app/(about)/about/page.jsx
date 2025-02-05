@@ -2,9 +2,12 @@ import AnimatedText from "@/components/common/AnimatedText";
 import Footer6 from "@/components/footers/Footer6";
 import Header6 from "@/components/headers/Header6";
 import About from "@/components/homes/home-6/About";
-import Features from "@/components/homes/home-6/Features";
 import Testimonials from "@/components/homes/home-6/Testimonials";
 import TestimonialsDark from "@/components/homes/home-6/TestimonialsDark";
+import Contact from "@/components/homes/home-6/Contact";
+import { features7 } from "@/data/features";
+import { featuresTitle7 } from "@/data/features";
+import Features from "@/components/heatPumps/Features";
 import { fancyMultipage } from "@/data/menu";
 import Image from "next/image";
 import Link from "next/link";
@@ -44,7 +47,7 @@ export default function AboutPage() {
                       <span className="wow charsAnimIn" data-splitting="chars">
                         <AnimatedText text="About" />
                         <span className="mark-decoration-3-wrap">
-                          <AnimatedText text="Studio" />
+                          <AnimatedText text="Us" />
                           <b
                             className="mark-decoration-3 wow scalexIn"
                             data-wow-delay="0.5s"
@@ -57,7 +60,7 @@ export default function AboutPage() {
                       className="section-descr mb-0 wow fadeIn"
                       data-wow-delay="0.2s"
                     >
-                      Crafting immersive digital journeys for brands.
+                      Serving Torontonians with Dedication
                     </p>
                   </div>
                 </div>
@@ -76,17 +79,19 @@ export default function AboutPage() {
                       className="section-descr mb-40 mb-sm-20 wow fadeInUp"
                       data-wow-delay="0.06s"
                     >
-                      Although web design has a fairly recent history. It has
-                      become a large part of people's everyday lives. It is hard
-                      to imagine the Internet without animated graphics,
-                      different styles of typography, background, videos and
-                      music.
+                      Heat Pump Rebates Toronto, located in Toronto, Ontario,
+                      Canada, is strategically positioned to efficiently serve
+                      our customers throughout the city. As a leading provider
+                      of energy-efficient heating and cooling solutions, we
+                      specialize in assisting both residential and commercial
+                      clients in navigating the complexities of heat pump
+                      rebates and installations.
                     </p>
                     <div
                       className="local-scroll wow fadeInUp"
                       data-wow-delay="0.12s"
                     >
-                      <Link
+                      {/* <Link
                         href={`/fancy-services${dark ? "-dark" : ""}`}
                         className="link-hover-anim"
                         data-link-animate="y"
@@ -108,7 +113,7 @@ export default function AboutPage() {
                             aria-hidden="true"
                           ></i>
                         </span>
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
                 </div>
@@ -117,13 +122,63 @@ export default function AboutPage() {
                 {/* End Images Composition */}
               </div>
             </section>
+
             <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
-            <section
-              className={`page-section  ${
-                dark ? "bg-dark-1 light-content" : ""
-              } `}
-            >
-              <Features />
+            <section className="page-section">
+              <div className="page-section">
+                <div className="row mb-xs-40">
+                  <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-center">
+                    <h3 className="section-title-small mb-30">Our Mission</h3>
+                    <p
+                      className="section-descr mb-40 mb-sm-20 wow fadeInUp"
+                      data-wow-delay="0.06s"
+                    >
+                      Our mission at Heat Pump Rebates Toronto is clear: to
+                      promote energy-efficient solutions by making heat pump
+                      technology accessible, affordable, and rewarding for homes
+                      and businesses across Toronto. We are committed to helping
+                      our clients maximize their rebates and transition to more
+                      sustainable heating and cooling systems.
+                    </p>
+                    {/* <div
+                      className="local-scroll wow fadeInUp"
+                      data-wow-delay="0.12s"
+                    >
+                      <Link
+                      href={`/fancy-services${dark ? "-dark" : ""}`}
+                      className="link-hover-anim"
+                      data-link-animate="y"
+                    >
+                      <span className="link-strong link-strong-unhovered">
+                        View our services{" "}
+                        <i
+                          className="mi-arrow-right size-24"
+                          aria-hidden="true"
+                        ></i>
+                      </span>
+                      <span
+                        className="link-strong link-strong-hovered"
+                        aria-hidden="true"
+                      >
+                        View our services{" "}
+                        <i
+                          className="mi-arrow-right size-24"
+                          aria-hidden="true"
+                        ></i>
+                      </span>
+                    </Link> 
+                    </div> */}
+                  </div>
+                </div>
+              </div>
+            </section>
+            <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
+            <section className="page-section">
+              <Features
+                featuresTitles={featuresTitle7}
+                features={features7}
+                imagePosition="left"
+              />
             </section>
             <hr className={`mt-0 mb-0 ${dark ? "white" : ""}`} />
             <section
@@ -132,6 +187,14 @@ export default function AboutPage() {
               } `}
             >
               {dark ? <TestimonialsDark /> : <Testimonials />}
+            </section>
+            <section
+              className={`page-section  scrollSpysection  ${
+                dark ? "bg-dark-1 light-content" : ""
+              } `}
+              id="contact"
+            >
+              <Contact />
             </section>
           </main>
           <footer className="page-section footer bg-dark-1 light-content pb-30">
