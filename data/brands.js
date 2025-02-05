@@ -6,7 +6,9 @@ export const brands = [
   "/assets/images/demo-fancy/logotypes/client-5.png",
   "/assets/images/demo-fancy/logotypes/client-6.png",
   "/assets/images/demo-fancy/logotypes/client-7.png",
-  "/assets/images/demo-fancy/logotypes/client-1.png",
+  "/assets/images/demo-fancy/logotypes/client-8.png",
+  "/assets/images/demo-fancy/logotypes/client-9.png",
+  "/assets/images/demo-fancy/logotypes/client-10.png",
 ];
 export const brandsDark = [
   "/assets/images/demo-fancy/logotypes/dark/client-1.png",

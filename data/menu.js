@@ -101,12 +101,13 @@ export const gradientOnePage = [
 ];
 
 export const fancyMultipage = [
-  { href: "/fancy-multi-page", text: "Home", class: "active" },
-  { href: "/fancy-about", text: "About" },
-  { href: "/fancy-services", text: "Rebates" },
-  { href: "/fancy-portfolio", text: "How To Apply" },
-  { href: "/fancy-blog", text: "Blog" },
-  { href: "/fancy-contact", text: "Contact" },
+  { href: "/", text: "Home", class: "active" },
+  { href: "/heat-pumps", text: "Heat Pump" },
+  { href: "/about", text: "About" },
+  { href: "/heat-pump-rebates", text: "Rebates" },
+  { href: "/how-to-apply-rebates", text: "How To Apply" },
+  { href: "/blog", text: "Blog" },
+  { href: "/contact", text: "Contact" },
 ];
 
 export const fancyMultipageDark = [

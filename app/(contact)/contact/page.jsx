@@ -16,7 +16,7 @@ export const metadata = {
   description:
     "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
 };
-export default function FancyContactPage() {
+export default function ContactPage() {
   return (
     <>
       <div className="theme-fancy">

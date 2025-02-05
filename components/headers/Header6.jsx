@@ -12,7 +12,7 @@ export default function Header6({ links }) {
               If you use a PNG logo image, the image resolution must be equal 200% of the visible logo
               image size for support of retina screens. See details in the template documentation. *) */}
       <div className="nav-logo-wrap position-static local-scroll">
-        <a href="#top" className="logo">
+        <a href="/" className="logo">
           <span className="row justify-content-center">
             <h4 className="m-0">Heat Pump</h4>
             <h6 className="m-0">Rebates Toronto</h6>

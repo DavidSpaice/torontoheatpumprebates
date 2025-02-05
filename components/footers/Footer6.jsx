@@ -18,16 +18,12 @@ export default function Footer6() {
       <div className="row pb-120 pb-sm-80 pb-xs-50">
         <div className="col-lg-3 text-gray mb-md-50">
           <div className="mb-30">
-            <Image
-              src="/assets/images/demo-fancy/logo-white.png"
-              alt="Your Company Logo"
-              width={154}
-              height={35}
-            />
+            <h5>Heat Pump Rebates Toronto</h5>
           </div>
           <p>
-            Integer auctor aliquet martor, sed lorem malesuada eros blandit
-            eget. Proin lacinia mortoc id odio vestibulum.
+            Toronto Heat Pump Rebates specializes in high-efficiency heating and
+            cooling solutions, assisting homeowners across Toronto with
+            obtaining significant rebates and expert installation services.
           </p>
           <div className="clearlinks">
             <strong>T.</strong>
@@ -78,10 +74,10 @@ export default function Footer6() {
       {/* Footer Text */}
       <div className="row text-gray">
         <div className="col-md-4 col-lg-3">
-          <b>© IB-Themes {new Date().getFullYear()}.</b>
+          <b>© All rights reserved Copyrights {new Date().getFullYear()}.</b>
         </div>
         <div className="col-md-7 offset-md-1 offset-lg-2 clearfix">
-          <b>Based in London, United Kingdom.</b>
+          <b>Based in Toronto, Canada.</b>
           {/* Back to Top Link */}
           <div
             className="local-scroll float-end mt-n20 mt-sm-10"
