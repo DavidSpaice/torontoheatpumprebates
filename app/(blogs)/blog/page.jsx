@@ -13,12 +13,7 @@ import { blogs14 } from "@/data/blogs";
 import Form3 from "@/components/newsletterForms/Form3";
 const onePage = false;
 const dark = false;
-export const metadata = {
-  title:
-    "Fancy Blog || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-  description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
-};
+
 export default function BlogPage() {
   return (
     <>
@@ -60,7 +55,8 @@ export default function BlogPage() {
                       className="section-descr mb-0 wow fadeIn"
                       data-wow-delay="0.2s"
                     >
-                      Insights and inspiration at your fingertips.
+                      Your Comprehensive Resource for Maximizing Heat Pump
+                      Rebates in Toronto.
                     </p>
                   </div>
                 </div>
@@ -138,7 +134,8 @@ export default function BlogPage() {
                   </div>
                   {/* End Blog Posts Grid */}
                   {/* Pagination */}
-                  <Pagination />
+                  {/*                   <Pagination />
+                   */}
                   {/* End Pagination */}
                 </div>
               </section>
@@ -149,10 +146,11 @@ export default function BlogPage() {
               {/* Section */}
               <section className="page-section">
                 <div className="container relative">
-                  <div className="row mt-n60">
-                    <div className="col-sm-6 col-lg-3 mt-60">
-                      {/* Widget */}
-                      <div className="widget mb-0">
+                  <div className="row justify-content-center mt-n60">
+                    {/*                     <div className="col-sm-6 col-lg-3 mt-60">
+                     */}{" "}
+                    {/* Widget */}
+                    {/*  <div className="widget mb-0">
                         <h3 className="widget-title">Categories</h3>
                         <div className="widget-body">
                           <ul className="clearlist widget-menu">
@@ -166,12 +164,14 @@ export default function BlogPage() {
                             ))}
                           </ul>
                         </div>
-                      </div>
-                      {/* End Widget */}
-                    </div>
-                    <div className="col-sm-6 col-lg-3 mt-60">
-                      {/* Widget */}
-                      <div className="widget mb-0">
+                      </div> */}
+                    {/* End Widget */}
+                    {/*                     </div>
+                     */}
+                    {/*                     <div className="col-sm-6 col-lg-3 mt-60">
+                     */}{" "}
+                    {/* Widget */}
+                    {/*  <div className="widget mb-0">
                         <h3 className="widget-title">Tags</h3>
                         <div className="widget-body">
                           <div className="tags">
@@ -182,12 +182,14 @@ export default function BlogPage() {
                             ))}
                           </div>
                         </div>
-                      </div>
-                      {/* End Widget */}
-                    </div>
-                    <div className="col-sm-6 col-lg-3 mt-60">
-                      {/* Widget */}
-                      <div className="widget mb-0">
+                      </div> */}
+                    {/* End Widget */}
+                    {/*                     </div>
+                     */}
+                    {/*                     <div className="col-sm-6 col-lg-3 mt-60">
+                     */}{" "}
+                    {/* Widget */}
+                    {/*                       <div className="widget mb-0">
                         <h3 className="widget-title">Archive</h3>
                         <div className="widget-body">
                           <ul className="clearlist widget-menu">
@@ -200,10 +202,11 @@ export default function BlogPage() {
                             ))}
                           </ul>
                         </div>
-                      </div>
-                      {/* End Widget */}
-                    </div>
-                    <div className="col-sm-6 col-lg-3 mt-60">
+                      </div> */}
+                    {/* End Widget */}
+                    {/*                     </div>
+                     */}{" "}
+                    <div className="col-sm-12 col-lg-6 mt-60">
                       {/* Widget */}
                       <div className="widget mb-0">
                         <h3 className="widget-title">Newsletter</h3>

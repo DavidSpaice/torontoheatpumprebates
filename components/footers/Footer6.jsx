@@ -31,7 +31,9 @@ export default function Footer6() {
           </div>
           <div className="clearlinks">
             <strong>E.</strong>
-            <a href="mailto:ibthemes21@gmail.com">ibthemes21@gmail.com</a>
+            <a href="mailto:info@torontoheatpumprebates.com">
+              info@torontoheatpumprebates.com
+            </a>
           </div>
         </div>
         <div className="col-lg-7 offset-lg-2">
